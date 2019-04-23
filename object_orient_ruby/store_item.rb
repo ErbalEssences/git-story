@@ -7,7 +7,8 @@
 #apple = {name: "apple", color: "red", price: 3}
 #orange = {name: "orange", color: "orange", price: 2}
 #cherries = {name: "cherries", color: "red", price: 3}
-#puts "#{apple[:name]} are #{apple[:color]}."
+
+#puts "#{apple[:name]}s are #{apple[:color]} and is $#{apple[:price]}."
 
 
 
@@ -38,10 +39,6 @@ class Fruit
   def print_info
     puts "#{@imput_name}s are #{@imput_color} and is $#{@imput_price}."
   end
-
-  def give_annual_raise
-    @imput_price *= 1.05
-  end
 end
 
 apple = Fruit.new("apple", "red", 3)
@@ -51,6 +48,7 @@ cherries = Fruit.new("cherries", "red", 3)
 apple.print_info
 puts apple.color
 puts apple.name
+puts apple.price
 puts apple.price
 apple.price = 2
 puts apple.price
